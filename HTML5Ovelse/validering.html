@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--index.html var skrevet feil-->
+<!--Manglet ! bak DOCTYPE og html etter-->
+<html lang="nb"> <!--Ingen språk har blitt lagt til-->
+<!--Manglet <head> start tag-->
+<head>
+    <meta charset=utf-8>
+    <!--title var skrevet feil-->
+    <title>Validerings Oppgave</title>
+</head>
+<body>
+    <!--Manglet > på header-->
+    <header>
+        <!--h1 og h2 på samme element i hver ende går ikke, dessuten mangler slutt /-->
+        <h1>Velkommen til Min Side</h1>
+        <nav>
+            <ul>
+                <li><a href=index.html>Hjem</a></li>
+                <li><a href=about.html>Om Meg</a></li>
+                <li><a href="contact.html">Kontakt</a><li> <!--Skrivefeil og mangel på </li> og </a>-->
+            </ul>
+            <!--nav skrevet feil-->
+        </nav>
+    <!--Manglet >-->
+    </header>
+
+    <main>
+        <section>
+            <h2>HTML feil</h2> <!--Ingen header for start av section-->
+            <!--Manglet e-->
+            <article>
+                <!--h1 og h2 på samme element i hver ende går ikke, dessuten mangler slutt /-->
+                <h2>HTML Feilene som må fikses</h2>
+                <p>Dette er et avsnitt som mangler et avsluttende tegn</p><!--Manglet slutt p tag-->
+                <img src="https://cdn.pixabay.com/photo/2023/07/21/16/23/cat-8141916_960_720.jpg" alt="Bilde med manglende fnutter"> <!--alt var plassert inni src tagen og alt manglet fnutter rundt-->
+            <!--Manglet e-->
+            </article>
+        </section>
+
+        <section>
+            <h2>Eksempel Liste</h2>
+            <ol>
+                <li>Punkt en</li>
+                <li>Punkt to</li> <!--Mangler syntax på </li> slutt tager-->
+                <li>Punkt tre</li> <!--Mangler forelder for listeelementer-->
+            </ol>
+        </section>
+
+        <section>
+            <h2>Form som mangler korrekt struktur</h2>
+            <form action=submit.php method=post>
+                <label for=name>Navn</label> <!--Manglet / på slutt tag-->
+                <input type=text id="name" name=name>
+                <input type="submit" value="Send"> <!--Manglet " på submit type verdi-->
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kontakt meg på epost: <a href="mailto:epost@domain.com">Epost</a></p> <!--Manglet " på href verdi-->
+        <h1>&amp;copy 2024 Mitt Navn</h1> <!--Skriv &amp; for string tekst-->
+    </footer> <!--Manglet syntax på footer slutt tag-->
+</body>
+</html>
