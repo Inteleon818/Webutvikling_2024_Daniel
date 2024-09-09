@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreringsskjema</title>
+</head>
+<body>
+
+    <header>
+        <h1>Registreringsskjema</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="validering.html">Valideringsoppgave</a></li>
+            <li><a href="mal.html">Nettside-mal</a></li>
+            <li><a href="kontaktoss.html">Kontakt oss</a></li>
+            <li><a href="registreringsskjema.html">Registreringsskjema</a></li>
+            <li><a href="oppskrift.html">Hamburger oppskrift</a></li>
+            <li><a href="studieplan.html">Studieplan</a></li>
+        </ul>   
+    </nav>
+
+    <main>
+        <section>
+            <form method="post" action="#">
+                <label>
+                    Navn:
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" placeholder="Daniel Karlsen" minlength="3" maxlength="30" required>
+                </label>
+
+                <label>
+                    E-post:
+                    <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="danielpk@viken.no" minlength="10" maxlength="50" required>
+                </label>
+
+                <label>
+                    Passord:
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="*********" minlength="8" required>
+                </label>
+
+                <label>
+                    Alder:
+                    <input type="number" min="18" max="99" placeholder="18" required>
+                </label>
+
+                <label>
+                    Telefonnummer:
+                    <input type="tel" pattern="[0-9]{8,12}" placeholder="12345678" required>
+                </label>
+
+                <label>
+                    Fødselsdato:
+                    <input type="date" max="2024-09-09" required>
+                </label>
+          
+                <input type="radio" id="male" name="gender" value="Mann" required> 
+                    <label for="male">Mann</label> 
+                <input type="radio" id="female" name="gender" value="Kvinne" required> 
+                    <label for="female">Kvinne</label>
+                <input type="radio" id="other" name="gender" value="Annet" required> 
+                    <label for="other">Annet</label>
+                    
+                <label>
+                    Land:
+                    <select name="land" required>
+                        <option value="">Ingen valg</option> 
+                        <option value="norge">Norge</option>
+                        <option value="sverige">Sverige</option>
+                        <option value="danmark">Danmark</option>
+                    </select>
+                </label>
+
+                <label for="personvern">Jeg aksepterer personvernet:</label>
+                <input type="checkbox" id="personvern" name="personvern" value="personvern" required>  
+
+                <input type="submit" value="Send inn">
+            </form>
+        </section>
+    </main>
+
+    <aside>
+
+    </aside>
+
+    <footer>
+        <p>Daniel Karlsen</p>
+        <p>danielpk@hiof.no</p>
+    </footer>
+    
+</body>
+</html>
