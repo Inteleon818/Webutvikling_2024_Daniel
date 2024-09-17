@@ -1,0 +1,35 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(9,66,101);
+    font-size: 60px;
+    background-color: cadetblue;
+    padding: 2rem;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a.btn {
+    background-color: black;
+    color: #fff;
+    padding: 2rem;
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+/*: topp 10px  høyre 5px  bunn 5px  venstre 5px;*/
+
+
