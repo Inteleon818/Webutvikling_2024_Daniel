@@ -1,3 +1,11 @@
+html {
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -34,6 +42,10 @@ img {
     position: absolute;
 }
 
+.flex-space-b h2 {
+    width: 100%;
+}
+
 .flex-menu {
     display: flex;
     list-style: none;
@@ -46,6 +58,15 @@ img {
 .flex-menu a {
     text-decoration: none;
     color: #000;
+}
+
+.product-card {
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 10px 10px 20px 0px #efefef;
+    border-radius: 4px;
+    padding: 1rem;
 }
 
 
