@@ -115,13 +115,13 @@ main {
     100% {
         background-image: url("../sprites/penge.png");
         left: 415px;
-        bottom: 200px;  
+        bottom: 220px;  
     }
 }
 
 #coin {
     animation-name: activeCoin;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-duration: 0.1s;
     animation-delay: 1.2s;
     background-size: cover;
