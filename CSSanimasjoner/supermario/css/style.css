@@ -1,0 +1,134 @@
+main {
+    background-image: urL("../sprites/bakgrunn.jpg");
+    background-size: contain;
+    height: 500px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+@keyframes runningMario {
+    from {background-image: url(../sprites/staa.png);}
+    to {background-image: url(../sprites/lopende.png);}
+}
+
+@keyframes movingMario {
+    0% {
+        left: 0;
+        bottom: 53px;
+    }
+
+    20% {
+        left: 410px;
+        bottom: 53px;
+    }
+
+    40% {
+        left: 410px;
+        bottom: 117px;
+    }
+
+    50% {
+        left: 410px;
+        bottom: 53px;
+    }
+
+    60% {
+        left: 575px;
+        bottom: 53px;
+    }
+
+    70% {
+        bottom: 200px;
+    }
+
+    100% {
+        left: 800px;
+        bottom: 53px;
+    }
+}
+
+@keyframes marioDies {
+    0% {
+        bottom: 53px;
+        left: 800px;
+        transform: rotate(0deg) scale(1);
+    }
+
+    100% {
+        background-image: url("../sprites/dead.png");
+        bottom: 150px;
+        transform: rotate(-45deg) scale(1.8);
+    }
+}
+
+#supermario {
+    /*background-image: url("../sprites/staa.png");*/
+    animation-name: runningMario, movingMario, marioDies;
+    animation-iteration-count: infinite, 1, 1;
+    animation-duration: 0.5s, 3s, 0.8s;
+    animation-fill-mode: none, forwards, forwards;
+    animation-delay: 0s, 0s, 3s;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    z-index: 999;
+}
+
+
+@keyframes runningGoomba {
+    from {background-image: url(../sprites/sopp.png);}
+    to {background-image: url(../sprites/sopp-kopi.png);}
+}
+
+@keyframes movingGoomba {
+    from {right: 0;}
+    to {right: 347px;}
+}
+
+#goomba {
+    /*background-image: url("../sprites/sopp.png");*/
+    animation-name: runningGoomba, movingGoomba;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 0.5s, 4.25s;
+    animation-direction: normal, alternate;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    right: 0;
+}
+
+
+@keyframes activeCoin {
+    0% {
+        background-image: url("../sprites/penge.png");
+        left: 415px;
+        bottom: 200px;  
+    }
+    100% {
+        background-image: url("../sprites/penge.png");
+        left: 415px;
+        bottom: 200px;  
+    }
+}
+
+#coin {
+    animation-name: activeCoin;
+    animation-iteration-count: infinite;
+    animation-duration: 0.1s;
+    animation-delay: 1.2s;
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 2;
+}
+
