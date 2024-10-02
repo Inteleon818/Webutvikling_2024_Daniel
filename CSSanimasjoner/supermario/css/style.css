@@ -1,6 +1,7 @@
 main {
     background-image: urL("../sprites/bakgrunn.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
     height: 500px;
     width: 100%;
     max-width: 1200px;
@@ -87,7 +88,7 @@ main {
 }
 
 @keyframes movingGoomba {
-    from {right: 0;}
+    from {right: 50px;}
     to {right: 347px;}
 }
 
