@@ -3,16 +3,18 @@
 }
 
 
-div {
+#container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+
 header {
     background-image: url("C:/Users/Danie/OneDrive - Østfold University College/programming_1_crash_course/12_a_ship_that_fires_bullets/images/stardrop.bmp");
     background-size: contain;
 
+    width: 100%;
     color: rgb(0, 0, 0);
     text-align: center;
     text-transform: uppercase;
@@ -58,8 +60,11 @@ main section {
     text-align: center;
 }
 
-main section h2 {
+
+.left {
     width: 100%;
+    text-align: left;
+    padding-left: 6.5rem;
 }
 
 main section article {
@@ -106,6 +111,7 @@ aside section a {
 
 
 footer {
+    width: 100%;
     color: rgb(255, 255, 255);
     background-color: rgb(52, 52, 52);
     padding: 1rem;
