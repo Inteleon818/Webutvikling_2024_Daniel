@@ -3,14 +3,17 @@
 }
 
 
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+#grid-container {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "main main aside"
+                         "footer footer footer";
 }
 
 
 header {
+    grid-area: header;
     background-image: url("C:/Users/Danie/OneDrive - Østfold University College/programming_1_crash_course/12_a_ship_that_fires_bullets/images/stardrop.bmp");
     background-size: cover;
 
@@ -23,7 +26,11 @@ header {
 }
 
 
-ul {
+nav {
+    grid-area: nav;
+}
+
+nav ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -33,23 +40,24 @@ ul {
     padding-top: 1rem;
 }
 
-ul a {
+nav ul a {
     text-decoration: none;
     color: black;
 }
 
-li:first-child {
+nav ul li:first-child {
     font-weight: bold;
 }
 
-a:hover {
+nav ul li a:hover {
     text-decoration: underline;
     color: rgb(255, 0, 0)
 }
 
 
 main {
-    max-width: 70vw;
+    grid-area: main;
+    max-width: 60vw;
     min-width: 400px;
     padding-top: 5rem;
 }
@@ -59,7 +67,6 @@ main section {
     flex-wrap: wrap;
     text-align: center;
 }
-
 
 .left {
     width: 100%;
@@ -76,9 +83,11 @@ main section article {
 
 
 aside {
+    grid-area: aside;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    max-width: 30vw;
+    max-width: 25vw;
     min-width: 350px;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -103,13 +112,25 @@ aside section ul {
     margin: 3rem;
 }
 
+aside section ul li{
+    text-align: start;
+}
+
 aside section a {
     text-decoration: none;
     color: rgb(255, 255, 255)
 }
 
 
+#main_aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
 footer {
+    grid-area: footer;
     width: 100%;
     color: rgb(255, 255, 255);
     background-color: rgb(52, 52, 52);

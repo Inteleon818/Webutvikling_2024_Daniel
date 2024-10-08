@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body, div {
+   background-color: rgb(151, 151, 151);
+}
+
+body div header h1 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+
+#grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(151, 151, 151)
+}
+
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    padding-right: 2rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+main {
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-areas: "overskrift overskrift overskrift overskrift"
+                        "nature nature science animal"
+                         "nature nature tech tech"
+                         "culture history geo food";
+    gap: 1rem;
+    background-color: rgb(151, 151, 151);
+    min-width: 800px;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#overskrift {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: overskrift;
+    margin-bottom: 0;
+}
+
+#nature {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(146, 52%, 72%);
+    grid-area: nature;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#science {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(0, 0%, 100%);
+    grid-area: science;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#animal {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(337, 52%, 72%);
+    grid-area: animal;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#tech {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(204, 52%, 72%);
+    grid-area: tech;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#culture {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(271, 52%, 72%);
+    grid-area: culture;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#history {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(8, 52%, 72%);
+    grid-area: history;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#geo {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(168, 52%, 72%);
+    grid-area: geo;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#food {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(30, 52%, 72%);
+    grid-area: food;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgb(151, 151, 151);
+    padding-top: 1rem;
+}
+
