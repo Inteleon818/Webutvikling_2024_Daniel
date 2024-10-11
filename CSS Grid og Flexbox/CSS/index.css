@@ -54,6 +54,23 @@ nav ul li a {
 
 
 main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-areas: "overskrift overskrift overskrift overskrift"
+                         "nature nature science animal"
+                         "nature nature tech tech"
+                         "culture history geo food";
+    gap: 1rem;
+    background-color: rgb(151, 151, 151);
+}
+
+
+@media screen and (max-width: 700px) {
+    main {
     background-color: rgb(255, 255, 255);
     grid-column-start: 2;
     grid-column-end: 3;
@@ -62,12 +79,17 @@ main {
 
     display: grid;
     grid-template-areas: "overskrift overskrift overskrift overskrift"
-                        "nature nature science animal"
-                         "nature nature tech tech"
-                         "culture history geo food";
+                         "nature nature science science"
+                         "nature nature animal animal"
+                         "tech tech tech tech"
+                         "culture culture history history"
+                         "geo geo food food";
     gap: 1rem;
     background-color: rgb(151, 151, 151);
-    min-width: 800px;
+    min-width: 300px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
 }
 
 main section {
