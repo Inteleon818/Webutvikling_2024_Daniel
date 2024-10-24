@@ -16,5 +16,15 @@ body {
     background-size: cover;
 }
 
+.skip {
+    position: absolute;
+    top: -1000px;
 
+    background-color: $black;
+    color: $white;
+
+    &:focus {
+        top: 100px;
+    }
+}
 
