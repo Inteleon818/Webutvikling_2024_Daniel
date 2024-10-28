@@ -60,7 +60,7 @@ main section {
    Hvorfor: Gir god avstand mellom seksjonene og innholdet.
    Hvordan: Padding på section-elementene skaper vertikal avstand mellom seksjonene.
 */
-nav {
+.main_nav {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -71,7 +71,7 @@ nav {
      Hvordan: position: fixed for å holde den fast, og z-index for å sikre at den er øverst.
   */
 }
-nav ul {
+.main_nav ul {
   display: flex;
   padding: 0;
   margin: 0;
@@ -96,14 +96,14 @@ nav ul {
      Hvordan: Setter display: none på span.
   */
 }
-nav ul a {
+.main_nav ul a {
   text-decoration: none;
   color: #fff;
 }
-nav ul i {
+.main_nav ul i {
   font-size: 20px;
 }
-nav ul span {
+.main_nav ul span {
   display: none;
 }
 
@@ -220,7 +220,7 @@ nav ul span {
   margin: 0.5rem 0;
 }
 #news .scroll-container article ul li:first-child {
-  color: #a6a6a6;
+  color: #000000;
   text-transform: uppercase;
 }
 #news h2 {
@@ -307,6 +307,42 @@ footer .some i {
    Hvorfor: For å gjøre klikkbare elementer tydeligere og mer interaktive.
    Hvordan: Gir bakgrunnsfarge, avrundede hjørner og padding.
 */
+.skip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Hva: Plasserer hele .skip-navigasjonen øverst til venstre på siden.
+     Hvorfor: Gjør at skip-lenkene er tilgjengelige i toppen av siden uten å påvirke layouten visuelt.
+     Hvordan: Bruker position: absolute for å plassere .skip utenfor hovedlayouten. */
+}
+.skip ul {
+  list-style: none;
+  /* Hva: Fjerner standard punktmerking på listen.
+     Hvorfor: For et renere design som passer for skip-navigasjon.
+     Hvordan: Setter list-style til none. */
+}
+.skip ul li a {
+  position: absolute;
+  left: -9999px;
+  /* Hva: Flytter lenkene utenfor synsfeltet.
+     Hvorfor: Skjuler lenkene visuelt uten å fjerne dem fra DOM, slik at de er tilgjengelige for skjermlesere og tastaturnavigasjon.
+     Hvordan: Posisjonerer lenkene absolutt og flytter dem langt ut til venstre. */
+}
+.skip ul li a:focus {
+  position: static;
+  left: auto;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  z-index: 1000;
+  text-decoration: none;
+  /* Hva: Viser lenken tydelig når den fokuseres med `Tab`.
+     Hvorfor: Gir god kontrast og gjør skip-lenken synlig og lett tilgjengelig for tastaturnavigasjon.
+     Hvordan: Endrer position til static for å sette lenken tilbake i normal flyt, og bruker bakgrunnsfarge og padding for tydelighet. */
+}
+
 @media only screen and (min-width: 800px) {
   nav {
     position: relative;
