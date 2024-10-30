@@ -30,7 +30,6 @@ body {
    Hvordan: Bruker $mainFont-variabelen, satt til Montserrat.
 */
 #container {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }

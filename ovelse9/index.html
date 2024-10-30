@@ -7,41 +7,41 @@
     <link rel="stylesheet" href="ikoner/css/fontawesome.css"> <!-- Kobler til FontAwesome CSS-fil for ikonbruk -->
     <link rel="stylesheet" href="ikoner/css/brands.css"> <!-- Kobler til spesifikke merkevareikoner i FontAwesome -->
     <link rel="stylesheet" href="css/main.css"> <!-- Kobler til hoved-CSS-filen for generell styling av siden -->
-    <title>UU</title> <!-- Sides tittel som vises i nettleserfanen -->
+    <title>Øvelse 9</title> <!-- Sides tittel som vises i nettleserfanen -->
 </head>
 <body>
     <div id="container"> <!-- Hovedbeholder for hele innholdet på siden, gjør det enklere å style hele siden -->
         <header>
             <nav class="skip">
                 <ul>
-                    <li><a href="#categories">skip to main content</a> </li>
+                    <li><a tabindex="1" href="#categories">skip to main content</a> </li>
                 </ul>
             </nav>
 
-            <a href="index.html" class="logo"><img src="https://picsum.photos/id/40/100/100" alt="kattesnute logo"></a> <!-- Logo-link for rask navigering til hjemmesiden -->
+            <a href="index.html" tabindex="6" class="logo"><img src="https://picsum.photos/id/40/100/100" alt="kattesnute logo"></a> <!-- Logo-link for rask navigering til hjemmesiden -->
         </header>
         <nav class="main_nav">
             <ul>
                 <li>
-                    <a aria-label="Hus-ikon" href="#">
+                    <a tabindex="2" aria-label="Til hjemsiden" href="#">
                         <i class="fa-solid fa-house"></i> <!-- Hus-ikon for "Hjem" -->
                         <span>Hjem</span> <!-- Tekst for å støtte ikonet; viktig for tilgjengelighet og forståelighet -->
                     </a>
                 </li>
                 <li>
-                    <a aria-label="Kurv-ikon" href="#">
+                    <a tabindex="3" aria-label="Til shoppingsiden" href="#">
                         <i class="fa-solid fa-basket-shopping"></i> <!-- Handlekurv-ikon -->
                         <span>Handlekurv</span> <!-- Forklarer ikonets funksjon -->
                     </a>
                 </li>
                 <li>
-                    <a aria-label="Hjerte-ikon" href="#">
+                    <a tabindex="4" aria-label="Til favoritter" href="#">
                         <i class="fa-solid fa-heart"></i> <!-- Favoritt-ikon -->
                         <span>Favoritter</span>
                     </a>
                 </li>
                 <li>
-                    <a aria-label="Person-ikon for konto" href="#">
+                    <a tabindex="5" aria-label="Til kontosiden" href="#">
                         <i class="fa-solid fa-user"></i> <!-- Bruker-ikon -->
                         <span>Min konto</span> <!-- Indikerer brukerkonto-tilgang -->
                     </a>
@@ -51,12 +51,12 @@
         <main> <!-- Hovedinnholdet på siden for å strukturere og gi bedre lesbarhet for skjermlesere -->
             <section id="welcome-banner">
                 <header>
-                    <h1>Overskrift</h1> <!-- Hovedoverskrift for velkomstseksjonen -->
-                    <a href="#" class="btn">Mer om våre produkter</a> <!-- Lenke som leder til mer informasjon -->
+                    <h1>Hjem og styr</h1> <!-- Hovedoverskrift for velkomstseksjonen -->
+                    <a tabindex="8" href="#" class="btn">Mer om våre produkter</a> <!-- Lenke som leder til mer informasjon -->
                 </header>
             </section>
             <section id="categories">
-                <h2>Categories</h2> <!-- Underoverskrift for kategoriseksjonen -->
+                <h2 tabindex="8">Categories</h2> <!-- Underoverskrift for kategoriseksjonen -->
                 <article id="el">
                     <h3>Elektronikk</h3> <!-- Kategoritittel for elektronikk; deler opp seksjonen i artikler for spesifikke kategorier -->
                 </article>
@@ -68,11 +68,11 @@
                 </article>
             </section>
             <section id="news">
-                <h2>Nyheter</h2> <!-- Underoverskrift for nyhetsseksjonen -->
-                <div class="scroll-container"> <!-- Beholder for scrollbar for å kunne bla horisontalt gjennom produkter -->
+                <h2 tabindex="9">Nyheter</h2> <!-- Underoverskrift for nyhetsseksjonen -->
+                <div tabindex="-1" class="scroll-container"> <!-- Beholder for scrollbar for å kunne bla horisontalt gjennom produkter -->
                     <!-- Artikkeloppsett for hvert produkt i nyhetsseksjonen -->
                     <article>
-                        <a aria-label="hjerte_ikon" href="#">
+                        <a tabindex="-1" aria-label="hjerte_ikon" href="#">
                             <i class="fa-solid fa-heart"></i> <!-- Hjerteikon for å markere som favoritt -->
                             <img src="https://picsum.photos/400/400" alt="tilfeldig generert bilde for nyheter"> <!-- Produktbilde -->
                         </a>
@@ -84,7 +84,7 @@
                     </article>
                     <!-- Flere artikkelblokker for flere produkter, gjentas for hvert produkt -->
                     <article>
-                        <a aria-label="hjerte_ikon" href="#">
+                        <a tabindex="-1" aria-label="hjerte_ikon" href="#">
                             <i class="fa-solid fa-heart"></i> <!-- Hjerteikon for å markere som favoritt -->
                             <img src="https://picsum.photos/400/400" alt="tilfeldig generert bilde for nyheter"> <!-- Produktbilde -->
                         </a>
@@ -95,7 +95,7 @@
                         </ul>
                     </article>
                     <article>
-                        <a aria-label="hjerte_ikon" href="#">
+                        <a tabindex="-1" aria-label="hjerte_ikon" href="#">
                             <i class="fa-solid fa-heart"></i> <!-- Hjerteikon for å markere som favoritt -->
                             <img src="https://picsum.photos/400/400" alt="tilfeldig generert bilde for nyheter"> <!-- Produktbilde -->
                         </a>
@@ -106,7 +106,7 @@
                         </ul>
                     </article>
                     <article>
-                        <a aria-label="hjerte_ikon" href="#">
+                        <a tabindex="-1" aria-label="hjerte_ikon" href="#">
                             <i class="fa-solid fa-heart"></i> <!-- Hjerteikon for å markere som favoritt -->
                             <img src="https://picsum.photos/400/400" alt="tilfeldig generert bilde for nyheter"> <!-- Produktbilde -->
                         </a>
@@ -117,7 +117,7 @@
                         </ul>
                     </article>
                     <article>
-                        <a aria-label="hjerte_ikon" href="#">
+                        <a tabindex="-1" aria-label="hjerte_ikon" href="#">
                             <i class="fa-solid fa-heart"></i> <!-- Hjerteikon for å markere som favoritt -->
                             <img src="https://picsum.photos/400/400" alt="tilfeldig generert bilde for nyheter"> <!-- Produktbilde -->
                         </a>
@@ -128,7 +128,7 @@
                         </ul>
                     </article>
                     <article>
-                        <a aria-label="hjerte_ikon" href="#">
+                        <a tabindex="-1" aria-label="hjerte_ikon" href="#">
                             <i class="fa-solid fa-heart"></i> <!-- Hjerteikon for å markere som favoritt -->
                             <img src="https://picsum.photos/400/400" alt="tilfeldig generert bilde for nyheter"> <!-- Produktbilde -->
                         </a>
@@ -139,7 +139,7 @@
                         </ul>
                     </article>
                     <article>
-                        <a aria-label="hjerte_ikon" href="#">
+                        <a tabindex="-1" aria-label="hjerte_ikon" href="#">
                             <i class="fa-solid fa-heart"></i> <!-- Hjerteikon for å markere som favoritt -->
                             <img src="https://picsum.photos/400/400" alt="tilfeldig generert bilde for nyheter"> <!-- Produktbilde -->
                         </a>
@@ -150,7 +150,7 @@
                         </ul>
                     </article>
                     <article>
-                        <a aria-label="hjerte_ikon" href="#">
+                        <a tabindex="-1" aria-label="hjerte_ikon" href="#">
                             <i class="fa-solid fa-heart"></i> <!-- Hjerteikon for å markere som favoritt -->
                             <img src="https://picsum.photos/400/400" alt="tilfeldig generert bilde for nyheter"> <!-- Produktbilde -->
                         </a>
@@ -161,7 +161,7 @@
                         </ul>
                     </article>
                     <article>
-                        <a aria-label="hjerte_ikon" href="#">
+                        <a tabindex="-1" aria-label="hjerte_ikon" href="#">
                             <i class="fa-solid fa-heart"></i> <!-- Hjerteikon for å markere som favoritt -->
                             <img src="https://picsum.photos/400/400" alt="tilfeldig generert bilde for nyheter"> <!-- Produktbilde -->
                         </a>
@@ -174,7 +174,7 @@
                 </div>
             </section>
             <section id="popular">
-                <h2>Populære kategorier</h2> <!-- Underoverskrift for populære kategorier -->
+                <h2 tabindex="10">Populære kategorier</h2> <!-- Underoverskrift for populære kategorier -->
                 <article>
                     <img src="https://picsum.photos/400/400" alt="Bilde i populære kategorier som er tilfeldig generert"> <!-- Bilde for populær kategori -->
                     <h3>Dolor sit amet</h3> <!-- Navn på populær kategori -->
@@ -203,11 +203,11 @@
             </section>
         </main>
         <footer>
-            <a href="#" class="logo"><img src="https://picsum.photos/id/40/100/100?grayscale" alt="kattesnute logo footer"></a> <!-- Gråtonelogo i bunnteksten som også peker til hjemmesiden -->
+            <a href="#" tabindex="11" class="logo"><img src="https://picsum.photos/id/40/100/100?grayscale" alt="kattesnute logo footer"></a> <!-- Gråtonelogo i bunnteksten som også peker til hjemmesiden -->
             <ul class="some"> <!-- Sosiale medier-ikoner -->
-                <li><i class="fa-brands fa-facebook-f"></i></li> <!-- Facebook-ikon -->
-                <li><i class="fa-brands fa-instagram"></i></li> <!-- Instagram-ikon -->
-                <li><i class="fa-brands fa-pinterest-p"></i></li> <!-- Pinterest-ikon -->
+                <li><p hidden>Lenke til Facebook siden</p><i class="fa-brands fa-facebook-f"></i></li> <!-- Facebook-ikon -->
+                <li><p hidden>Lenke til Instagram siden</p><i class="fa-brands fa-instagram"></i></li> <!-- Instagram-ikon -->
+                <li><p hidden>Lenke til Pinterest siden</p><i class="fa-brands fa-pinterest-p"></i></li> <!-- Pinterest-ikon -->
             </ul>
         </footer>
     </div>  
