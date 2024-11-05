@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="nb">
 	<head>
-		<link href="font/css/all.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 		<link rel="stylesheet" href="style.css">
         <title>Søkemotoroptimalisering</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Features maps of several regions from the Pokemon world">
 	</head>
 	<body>
@@ -37,9 +37,9 @@
 				<li class="dropdown-point"> 
 					<a>Oblig 1</a>
 					<ul class="dropdown-main">
-						<li><a>HTML-skjema</a></li>
-						<li><a>Media typer</a></li>
-						<li><a>CSS Layout</a></li>
+						<li><a href="#">HTML-skjema</a></li>
+						<li><a href="#">Media typer</a></li>
+						<li><a href="#">CSS Layout</a></li>
 					</ul>
 				</li>
 				<!-- Her slutter dropdown -->
@@ -51,51 +51,71 @@
 				<header>
 					<h3>Overskrift 1</h3>
 				</header>
-				<img src="https://picsum.photos/400/400" alt="Kart over Kanto regionen">
+                <picture>
+                    <source media="(min-width:650px)" srcset="https://picsum.photos/700/700">
+                    <source media="(max-width:465px)" srcset="https://picsum.photos/576/576">
+                    <img src="https://picsum.photos/576/576" alt="Kart over Kanto regionen">
+                </picture>
 				<p>
 					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
 				</p>
-				<a>Kanto</a>
+				<a href="#">Kanto</a>
 			</article>
 			<article id="item-2">
 				<header>
 					<h3>Overskrift 2</h3>
 				</header>
-				<img src="https://picsum.photos/400/400" alt="Kart over Johto regionen">
+				<picture>
+                    <source media="(min-width:650px)" srcset="https://picsum.photos/700/700">
+                    <source media="(max-width:465px)" srcset="https://picsum.photos/576/576">
+                    <img src="https://picsum.photos/576/576" alt="Kart over Johto regionen">
+                </picture>
 				<p>
 					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
 				</p>
-				<a>Johto</a>
+				<a href="#">Johto</a>
 			</article>
 			<article id="item-3">
 				<header>
 					<h3>Overskrift 3</h3>
 				</header>
-				<img src="https://picsum.photos/400/400" alt="Kart over Hoenn regionen">
+				<picture>
+                    <source media="(min-width:650px)" srcset="https://picsum.photos/700/700">
+                    <source media="(max-width:465px)" srcset="https://picsum.photos/576/576">
+                    <img src="https://picsum.photos/576/576" alt="Kart over Hoenn regionen">
+                </picture>
 				<p>
 					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
 				</p>
-				<a>Hoenn</a>
+				<a href="#">Hoenn</a>
 			</article>
 			<article>
 				<header>
 					<h3>Overskrift 1</h3>
 				</header>
-				<img src="https://picsum.photos/400/400" alt="Kart over Sinnoh regionen">
+				<picture>
+                    <source media="(min-width:650px)" srcset="https://picsum.photos/700/700">
+                    <source media="(max-width:465px)" srcset="https://picsum.photos/576/576">
+                    <img src="https://picsum.photos/576/576" alt="Kart over Sinnoh regionen">
+                </picture>
 				<p>
 					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
 				</p>
-				<a>Sinnoh</a>
+				<a href="#">Sinnoh</a>
 			</article>
 			<article>
 				<header>
 					<h3>Overskrift 2</h3>
 				</header>
-				<img src="https://picsum.photos/400/400" alt="Kart over Unova regionen">
+				<picture>
+                    <source media="(min-width:650px)" srcset="https://picsum.photos/700/700">
+                    <source media="(max-width:465px)" srcset="https://picsum.photos/576/576">
+                    <img src="https://picsum.photos/576/576" alt="Kart over Unova regionen">
+                </picture>
 				<p>
 					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
 				</p>
-				<a>Unova</a>
+				<a href="#">Unova</a>
 			</article>
 		</section>
 		<aside>
@@ -106,16 +126,16 @@
 			<section id="rel-article">
                 <h3>Flere ressurser</h3>
 				<ul>
-					<li><a>Umbreon</a></li>
-					<li><a>Espeon</a></li>
-					<li><a>Leafeon</a></li>
-					<li><a>Glaceon</a></li>
-					<li><a>Sylveon</a></li>
+					<li><a href="#">Umbreon</a></li>
+					<li><a href="#">Espeon</a></li>
+					<li><a href="#">Leafeon</a></li>
+					<li><a href="#">Glaceon</a></li>
+					<li><a href="#">Sylveon</a></li>
 				</ul>
 			</section>			
 			<section id="google-btn">
                 <h2>Knapper til steder</h2>
-				<a class="btn">Google</a>
+				<a href="#" class="btn">Google</a>
 			</section>
 		</aside>
 		<footer>
